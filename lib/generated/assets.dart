@@ -14,6 +14,6 @@ class Assets {
   static const String themeBooksTheme = 'lib/Core/theme/books_theme.dart';
   static const String utilsNavigateToAndRemove = 'lib/Core/utils/navigate_to_and_remove.dart';
   static const String viewsSplashView = 'lib/Features/splash/views/splash_view.dart';
-  static const String widgetsSplashViewBody = 'lib/Features/splash/views/widgets/SplashViewBody.dart';
+  static const String widgetsSplashViewBody = 'lib/Features/splash/views/widgets/splash_view_body.dart';
 
 }
