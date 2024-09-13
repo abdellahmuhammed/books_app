@@ -1,6 +1,10 @@
 import 'package:bloc/bloc.dart';
+import 'package:book_app/Features/splash/views/splash_view.dart';
 import 'package:book_app/myBlocObserver.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+
+import 'Core/theme/books_theme.dart';
 
 void main() {
   Bloc.observer = MyBlocObserver();
@@ -12,18 +16,10 @@ class BooksApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      theme: BooksThemes().darkThem(),
+      home:const SplashView(),
     );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
