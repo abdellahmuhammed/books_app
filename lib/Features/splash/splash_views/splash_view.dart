@@ -20,7 +20,7 @@ class _SplashViewState extends State<SplashView> {
   }
 
   void _buildNavigateToHome() {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushAndRemoveUntil(
         _buildRouteToHome(),
         (route) => false,
