@@ -14,7 +14,7 @@ class BooksThemes {
 
   ThemeData darkThem() {
     return _themData(
-      backgroundColor: BooksColor().kPrimaryColor,
+      backgroundColor: BooksColor.kPrimaryColor,
       textColor: Colors.white,
       statusBarIconBrightness: Brightness.light,
     );
