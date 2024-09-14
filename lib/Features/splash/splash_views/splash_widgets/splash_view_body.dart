@@ -13,10 +13,11 @@ class SplashViewBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SvgPicture.asset(BookAssets.imagesLogo ,semanticsLabel:'Books Logo'),
+          SvgPicture.asset(BookAssets.imagesLogo ,semanticsLabel:'Books Logo' , height: 40,),
+          const SizedBox(height: 30,),
           Text(
             'Tutorial Free Books',
-            style: Theme.of(context).textTheme.titleLarge,
+            style: Theme.of(context).textTheme.headlineLarge,
             textAlign: TextAlign.center,
           ),
         ],
