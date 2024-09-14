@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart'; // To handle SVG image
 
-import '../../../../Core/generated_assets/books_assets.dart'; // Import the assets paths
+import '../../../../Core/assets_helper/books_assets.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -18,7 +18,7 @@ class SplashViewBody extends StatelessWidget {
         children: [
           // Displaying the SVG logo with a height of 40
           SvgPicture.asset(
-            BookAssets.imagesLogo,
+            BooksAssetsHelper.imagesLogo,
             semanticsLabel: 'Books Logo', // Screen readers use this label
             height: 40,
           ),
