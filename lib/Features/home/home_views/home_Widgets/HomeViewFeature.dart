@@ -9,7 +9,7 @@ class HomeViewFeature extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.width*.66,
+      height: MediaQuery.of(context).size.width*.6,
       child: ListView.separated(
         physics:const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
