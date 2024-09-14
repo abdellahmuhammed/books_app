@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart'; // To handle SVG image
 
-import '../../../../Core/assets_helper/books_assets.dart';
+import '../../../../Core/assets_helper/books_assets_helper.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
