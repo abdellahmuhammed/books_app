@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
-import 'package:book_app/Features/splash/views/splash_view.dart';
 import 'package:book_app/myBlocObserver.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'Core/theme/books_theme.dart';
+import 'Features/splash/splash_views/splash_view.dart';
 
 void main() {
   Bloc.observer = MyBlocObserver();
