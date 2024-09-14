@@ -1,9 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:book_app/Core/theme/book_colors.dart';
 import 'package:book_app/myBlocObserver.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'Core/theme/books_theme.dart';
 import 'Features/splash/splash_views/splash_view.dart';
 
 void main() {
