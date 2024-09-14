@@ -1,6 +1,4 @@
-import 'package:book_app/Core/assets_helper/books_assets_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import 'home_Widgets/CustomHomeViewAppBar.dart';
 
