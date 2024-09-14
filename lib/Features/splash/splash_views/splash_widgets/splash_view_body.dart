@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
-import '../../../../Core/generate_assets/books_assets.dart';
+import '../../../../Core/generated_assets/books_assets.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -12,7 +13,7 @@ class SplashViewBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Image.asset(BookAssets.imagesLogo),
+          SvgPicture.asset(BookAssets.imagesLogo ,semanticsLabel:'Books Logo'),
           Text(
             'Tutorial Free Books',
             style: Theme.of(context).textTheme.titleLarge,
