@@ -1,8 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:book_app/Features/home/home_view.dart';
 import 'package:flutter/material.dart';
-import 'widgets/splash_view_body.dart';
+
+import '../../home/home_views/home_view.dart';
+import 'splash_widgets/splash_view_body.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

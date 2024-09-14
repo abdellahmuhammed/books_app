@@ -1,7 +1,5 @@
 class BookAssets{
-
-  final String bookImage ='assets/images/book.jfif';
-  final String logo1Image ='assets/images/Logo.svg';
-  final String logoImage ='assets/images/Logo.png';
+  static const String imagesBook = 'assets/images/book.jfif';
+  static const String imagesLogo = 'assets/images/Logo.png';
 
 }
