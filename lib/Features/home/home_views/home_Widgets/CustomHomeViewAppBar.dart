@@ -15,7 +15,7 @@ class CustomHomeViewAppBar extends StatelessWidget {
         // Displaying the logo as an SVG image with height 30
         SvgPicture.asset(
           BooksAssetsHelper.imagesLogo,
-          height: 30, // SVG image with height 30
+          height: 24, // SVG image with height 30
         ),
 
         // Spacer widget to push the search icon to the right
@@ -29,7 +29,7 @@ class CustomHomeViewAppBar extends StatelessWidget {
           icon: const Icon(
             Icons.search, // Search icon
             color: Colors.white, // Icon color is white
-            size: 30, // Icon size is set to 30
+            size: 24, // Icon size is set to 30
           ),
         ),
       ],
