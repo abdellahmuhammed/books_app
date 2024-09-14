@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'HomeFeatureListView.dart';
+import 'HomeFeatureItem.dart';
 
 class HomeViewFeature extends StatelessWidget {
   const HomeViewFeature({super.key});
@@ -14,7 +14,7 @@ class HomeViewFeature extends StatelessWidget {
         physics:const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: 5,
-        itemBuilder: (context, index) => const HomeFeatureListView(),
+        itemBuilder: (context, index) => const HomeFeatureItem(),
         separatorBuilder: (BuildContext context, int index) => const SizedBox(width: 10,),
       ),
     );
