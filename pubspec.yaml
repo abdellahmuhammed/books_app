@@ -33,6 +33,7 @@ dependencies:
   flutter_bloc:
   dio:
   get:
+  flutter_svg:
   flutter:
     sdk: flutter
 
