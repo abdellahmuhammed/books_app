@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import '../../home/home_views/home_view.dart';
+import '../../home/home_views/home_layout_view.dart';
 import 'splash_widgets/splash_view_body.dart';
 
 // The SplashView widget is responsible for displaying the splash screen
@@ -41,7 +41,7 @@ class _SplashViewState extends State<SplashView> {
   // This method builds a custom route to HomeView with a slide transition animation
   Route _buildRouteToHome() {
     return PageRouteBuilder(
-      pageBuilder: (context, animation, secondaryAnimation) => const HomeView(),
+      pageBuilder: (context, animation, secondaryAnimation) => const HomeLayoutView(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         const begin =
             Offset(0.0, 1.0); // Animation starts from left (outside screen)
