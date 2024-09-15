@@ -40,7 +40,7 @@ class SearchViewBody extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const  SearchListView(),
+            const SearchListView(),
           ],
         ),
       ),
