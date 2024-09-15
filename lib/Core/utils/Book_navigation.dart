@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:go_router/go_router.dart';
 
 // lib/core/utils/Book_navigation.dart

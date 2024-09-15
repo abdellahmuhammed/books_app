@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
 import '../../../../Core/utils/Book_navigation.dart';

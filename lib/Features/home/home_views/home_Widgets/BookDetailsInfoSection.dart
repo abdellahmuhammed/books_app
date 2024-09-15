@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: file_names
 
+import 'package:flutter/material.dart';
 import '../../../../Core/assets_helper/books_assets_helper.dart';
 import '../../../../Core/theme/books_theme.dart';
 import 'BookRating.dart';
