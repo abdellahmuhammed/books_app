@@ -8,19 +8,18 @@ class BestSellerListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.only(right: 30, bottom: 15),
-        child: ListView.separated(
-          physics: const BouncingScrollPhysics(),
-          // Adds a bouncy scrolling effect
-          itemBuilder: (context, index) => const BestSellerListViewItem(),
-          // Builds each best seller item
-          separatorBuilder: (BuildContext context, int index) => const SizedBox(
-            height: 20, // Adds space between items
-          ),
-          itemCount: 6, // Number of best seller items
+    return Padding(
+      padding: const EdgeInsets.only(right: 30, bottom: 15, top: 0),
+      child: ListView.separated(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        // Adds a bouncy scrolling effect
+        itemBuilder: (context, index) => const BestSellerListViewItem(),
+        // Builds each best seller item
+        separatorBuilder: (BuildContext context, int index) => const SizedBox(
+          height: 20, // Adds space between items
         ),
+        itemCount: 30, // Number of best seller items
       ),
     );
   }
