@@ -2,7 +2,7 @@ import 'package:book_app/Core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
 import '../../../../Core/utils/Book_navigation.dart';
-import 'BestSellerPriceAndRatting.dart';
+import 'BookPriceAndRatting.dart';
 import 'CustomImage.dart';
 // Widget representing a single best seller item
 
@@ -13,7 +13,7 @@ class BestSellerListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        BookNavigation.navigateTo(context, location: BookRouter.kBookDetails);
+        BookNavigation.navigateTo(context, location: BookRouter.kBookDetails ,);
       },
       child: SizedBox(
         height: 105, // Dynamic height based on screen size,
@@ -53,7 +53,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         .copyWith(color: Colors.grey),
                   ),
                   // Row to display price and rating
-                  const BestSellerPriceAndRatting(),
+                  const BookPriceAndRatting(),
                   // Adds a small gap
                 ],
               ),

@@ -1,3 +1,5 @@
+import 'package:book_app/Core/utils/Book_navigation.dart';
+import 'package:book_app/Core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart'; // To handle SVG images
 
@@ -24,7 +26,8 @@ class CustomHomeViewAppBar extends StatelessWidget {
         // Search button with an icon
         IconButton(
           onPressed: () {
-            // Action when the search button is pressed (currently empty)
+            BookNavigation.navigateTo(context, location:BookRouter.kSearchView );
+
           },
           icon: const Icon(
             Icons.search, // Search icon

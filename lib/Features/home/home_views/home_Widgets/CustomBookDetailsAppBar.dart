@@ -1,5 +1,7 @@
 // CustomBookDetailsAppBar is a custom app bar widget for the home view
+import 'package:book_app/Core/utils/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomBookDetailsAppBar extends StatelessWidget {
   const CustomBookDetailsAppBar({super.key});
@@ -10,7 +12,9 @@ class CustomBookDetailsAppBar extends StatelessWidget {
     return Row(
       children: [
         // Displaying the logo as an SVG image with height 30
-        IconButton(onPressed: (){}, icon:const Icon(Icons.close)),
+        IconButton(onPressed: (){
+          GoRouter.of(context).pop();
+        }, icon:const Icon(Icons.close)),
 
         // Spacer widget to push the search icon to the right
         const Spacer(),
