@@ -3,7 +3,6 @@ import 'package:book_app/Core/theme/book_colors.dart';
 import 'package:book_app/Core/utils/app_router.dart';
 import 'package:book_app/myBlocObserver.dart';
 import 'package:flutter/material.dart';
-import 'Features/splash/splash_views/splash_view.dart';
 
 void main() {
   Bloc.observer = MyBlocObserver();
