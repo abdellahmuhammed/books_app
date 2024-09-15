@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'BestSellerListViewItem.dart';
+import '../../../../Core/utils/helper.dart';
+import 'BookListViewItem.dart';
 // Widget for displaying the list of best-selling items
 
 class BestSellerListView extends StatelessWidget {
@@ -14,11 +15,9 @@ class BestSellerListView extends StatelessWidget {
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
         // Adds a bouncy scrolling effect
-        itemBuilder: (context, index) => const BestSellerListViewItem(),
+        itemBuilder: (context, index) => const BookListViewItem(),
         // Builds each best seller item
-        separatorBuilder: (BuildContext context, int index) => const SizedBox(
-          height: 20, // Adds space between items
-        ),
+        separatorBuilder: (BuildContext context, int index) =>  myDivider(),
         itemCount: 30, // Number of best seller items
       ),
     );
