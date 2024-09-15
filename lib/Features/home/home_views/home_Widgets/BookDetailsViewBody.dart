@@ -1,4 +1,6 @@
 
+import 'package:book_app/Features/home/home_views/home_Widgets/BookActionButtons.dart';
+import 'package:book_app/Features/home/home_views/home_Widgets/SimilarBooksListView.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../Core/assets_helper/books_assets_helper.dart';
@@ -6,7 +8,6 @@ import '../../../../Core/theme/books_theme.dart';
 import 'BookRating.dart';
 import 'CustomBookDetailsAppBar.dart';
 import 'CustomImage.dart';
-import 'SimilarBooksItem.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -59,6 +60,7 @@ class BookDetailsViewBody extends StatelessWidget {
             const SizedBox(
               height: 37,
             ),
+           const BookActionButtons(),
             const SizedBox(
               height: 30,
             ),
@@ -70,10 +72,10 @@ class BookDetailsViewBody extends StatelessWidget {
                     ,
               ),
             ),
-
             const SizedBox(
               height: 16,
             ),
+           const SimilarBooksListView()
 
 
 

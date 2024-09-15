@@ -8,8 +8,7 @@ class SimilarBooksItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height ;
-    return CustomImage(assetsImage: BooksAssetsHelper.imagesBook , height: height * .16,)
+    return const CustomImage(assetsImage: BooksAssetsHelper.imagesBook ,)
     ;
   }
 }

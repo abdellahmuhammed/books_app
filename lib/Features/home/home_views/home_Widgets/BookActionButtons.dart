@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'BookDetailsViewBody.dart';
+import '../../../../Core/widgets/CustomMaterialButton.dart';
 
 class BookActionButtons extends StatelessWidget {
   const BookActionButtons({super.key});
