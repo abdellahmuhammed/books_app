@@ -2,7 +2,7 @@ import 'package:book_app/Core/theme/books_theme.dart';
 import 'package:flutter/material.dart';
 import 'BestSellerListView.dart';
 import 'CustomHomeViewAppBar.dart'; // Custom AppBar for the home view
-import 'HomeViewFeature.dart'; // Feature section for the home view
+import 'HomeFeatureListView.dart'; // Feature section for the home view
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -25,7 +25,7 @@ class HomeViewBody extends StatelessWidget {
               height: 46.9,
             ),
             // Adds vertical spacing equal to 2% of the screen height
-            const HomeViewFeature(),
+            const HomeFeatureListView(),
             // Displays the feature section of the home view
             const SizedBox(
               height: 49,

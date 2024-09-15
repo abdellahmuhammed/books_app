@@ -6,8 +6,8 @@ import 'BookPriceAndRatting.dart';
 import 'CustomImage.dart';
 // Widget representing a single best seller item
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {

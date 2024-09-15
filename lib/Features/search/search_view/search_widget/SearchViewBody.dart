@@ -1,6 +1,9 @@
 import 'package:book_app/Core/theme/books_theme.dart';
 import 'package:flutter/material.dart';
 
+import 'CustomSearchTextFiled.dart';
+import 'SearchListView.dart';
+
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
 
@@ -15,6 +18,7 @@ class SearchViewBody extends StatelessWidget {
           bottom: 30,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'Searching abut Book you are need it?',
@@ -24,10 +28,20 @@ class SearchViewBody extends StatelessWidget {
               height: 20,
             ),
             const CustomSearchTextFiled(),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Result Searching..',
+              style: BooksStyles.textStyle20Bold(context),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const  SearchListView(),
           ],
         ),
       ),
     );
   }
 }
-

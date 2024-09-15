@@ -14,7 +14,7 @@ class CustomSearchTextFiled extends StatelessWidget {
           style: BooksStyles.textStyle24Medium(context)
               .copyWith(color: Colors.grey),
         ),
-        suffixIcon:const Icon(Icons.search , color: Colors.grey,),
+        suffixIcon:IconButton(onPressed: (){}, icon: const Icon(Icons.search , color: Colors.grey,)),
         enabledBorder: _buildOutlineInputBorder(),
         focusedBorder: _buildOutlineInputBorder(),
       ),

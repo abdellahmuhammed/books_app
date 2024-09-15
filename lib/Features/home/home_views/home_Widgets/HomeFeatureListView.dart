@@ -1,10 +1,11 @@
 
+import 'package:book_app/Core/utils/helper.dart';
 import 'package:flutter/material.dart';
 
 import 'HomeFeatureItem.dart';
 
-class HomeViewFeature extends StatelessWidget {
-  const HomeViewFeature({super.key});
+class HomeFeatureListView extends StatelessWidget {
+  const HomeFeatureListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class HomeViewFeature extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 5,
         itemBuilder: (context, index) => const HomeFeatureItem(),
-        separatorBuilder: (BuildContext context, int index) => const SizedBox(width: 10,),
+        separatorBuilder: (BuildContext context, int index) => myDivider(),
       ),
     );
   }
