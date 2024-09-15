@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 
-// lib/core/utils/navigation_helper.dart
+// lib/core/utils/Book_navigation.dart
 
-abstract class NavigationHelper {
+abstract class BookNavigation {
   static void navigateToAndRemoveUntil(
     context, {
     Object? extra,
