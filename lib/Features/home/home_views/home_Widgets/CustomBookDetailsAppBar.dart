@@ -1,5 +1,4 @@
 // CustomBookDetailsAppBar is a custom app bar widget for the home view
-import 'package:book_app/Core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

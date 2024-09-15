@@ -1,13 +1,10 @@
 
-import 'package:book_app/Features/home/home_views/home_Widgets/BookActionButtons.dart';
-import 'package:book_app/Features/home/home_views/home_Widgets/SimilarBooksListView.dart';
-import 'package:flutter/material.dart';
 
-import '../../../../Core/assets_helper/books_assets_helper.dart';
+import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
-import 'BookRating.dart';
-import 'CustomBookDetailsAppBar.dart';
-import 'CustomImage.dart';
+import 'BookActionButtons.dart';
+import 'BookDetailsInfoSection.dart';
+import 'SimilarBooksListView.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -20,43 +17,7 @@ class BookDetailsViewBody extends StatelessWidget {
             const EdgeInsets.only(top: 25, left: 30, right: 30, bottom: 40),
         child: Column(
           children: [
-            const CustomBookDetailsAppBar(),
-            const SizedBox(
-              height: 25,
-            ),
-            CustomImage(
-              assetsImage: BooksAssetsHelper.imagesBook,
-              height: MediaQuery.of(context).size.height * .30,
-              aspectRatio: 3 / 4,
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            SizedBox(
-              width: double.infinity,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 70),
-                child: Text(
-                  'The Jungle Book',
-                  style: BooksStyles.textStyle30Bold(context),
-                  maxLines: 2,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 4,
-            ),
-            Text(
-              'The Jungle Book',
-              style: BooksStyles.textStyle18Medium(context)
-                  .copyWith(color: Colors.grey),
-            ),
-            const SizedBox(
-              height: 14,
-            ),
-            const BookRating(
-              mainAxisAlignment: MainAxisAlignment.center,
-            ),
+            const   BookDetailsInfoSection(),
             const SizedBox(
               height: 37,
             ),
@@ -76,9 +37,6 @@ class BookDetailsViewBody extends StatelessWidget {
               height: 16,
             ),
            const SimilarBooksListView()
-
-
-
           ],
         ),
       ),

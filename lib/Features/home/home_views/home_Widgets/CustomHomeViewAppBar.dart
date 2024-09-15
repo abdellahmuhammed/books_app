@@ -1,9 +1,10 @@
-import 'package:book_app/Core/utils/Book_navigation.dart';
-import 'package:book_app/Core/utils/app_router.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart'; // To handle SVG images
 
-import '../../../../Core/assets_helper/books_assets_helper.dart'; // Import for the assets helper file
+import '../../../../Core/assets_helper/books_assets_helper.dart';
+import '../../../../Core/utils/Book_navigation.dart';
+import '../../../../Core/utils/app_router.dart'; // Import for the assets helper file
 
 // CustomHomeViewAppBar is a custom app bar widget for the home view
 class CustomHomeViewAppBar extends StatelessWidget {

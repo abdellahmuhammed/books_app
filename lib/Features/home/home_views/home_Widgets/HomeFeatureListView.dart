@@ -1,7 +1,7 @@
 
-import 'package:book_app/Core/utils/helper.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../Core/utils/helper.dart';
 import 'HomeFeatureItem.dart';
 
 class HomeFeatureListView extends StatelessWidget {

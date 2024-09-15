@@ -1,16 +1,15 @@
 import 'package:bloc/bloc.dart';
-import 'package:book_app/Core/theme/book_colors.dart';
-import 'package:book_app/Core/utils/app_router.dart';
-import 'package:book_app/myBlocObserver.dart';
 import 'package:flutter/material.dart';
-
+import 'Core/theme/book_colors.dart';
+import 'Core/utils/app_router.dart';
+import 'myBlocObserver.dart';
 void main() {
   Bloc.observer = MyBlocObserver();
-  runApp(const BooksApp());
+  runApp(const BooklyApp());
 }
 
-class BooksApp extends StatelessWidget {
-  const BooksApp({super.key});
+class BooklyApp extends StatelessWidget {
+  const BooklyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

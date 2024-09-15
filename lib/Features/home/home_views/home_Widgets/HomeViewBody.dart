@@ -1,5 +1,5 @@
-import 'package:book_app/Core/theme/books_theme.dart';
 import 'package:flutter/material.dart';
+import '../../../../Core/theme/books_theme.dart';
 import 'BestSellerListView.dart';
 import 'CustomHomeViewAppBar.dart'; // Custom AppBar for the home view
 import 'HomeFeatureListView.dart'; // Feature section for the home view

@@ -1,7 +1,7 @@
-import 'package:book_app/Features/home/home_views/home_Widgets/BookRating.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../Core/theme/books_theme.dart';
+import 'BookRating.dart';
 
 class BookPriceAndRatting extends StatelessWidget {
   const BookPriceAndRatting({

@@ -1,8 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:book_app/Core/utils/app_router.dart';
-import 'package:book_app/Core/utils/Book_navigation.dart';
+
 import 'package:flutter/material.dart';
+import '../../../Core/utils/Book_navigation.dart';
+import '../../../Core/utils/app_router.dart';
 import '../../../Core/utils/route_to_home_with_animation.dart';
 import 'splash_widgets/splash_view_body.dart';
 

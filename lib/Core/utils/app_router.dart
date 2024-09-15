@@ -1,8 +1,9 @@
-import 'package:book_app/Features/home/home_views/home_layout_view.dart';
-import 'package:book_app/Features/search/search_view/search_view.dart';
+
 import 'package:go_router/go_router.dart';
 
 import '../../Features/home/home_views/book_details_view.dart';
+import '../../Features/home/home_views/home_layout_view.dart';
+import '../../Features/search/search_view/search_view.dart';
 import '../../Features/splash/splash_views/splash_view.dart';
 
 abstract class BookRouter {
