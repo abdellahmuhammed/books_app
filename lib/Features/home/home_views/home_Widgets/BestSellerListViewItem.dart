@@ -1,7 +1,7 @@
 import 'package:book_app/Core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
-import '../../../../Core/utils/navigation_helper.dart';
+import '../../../../Core/utils/Book_navigation.dart';
 import 'BestSellerPriceAndRatting.dart';
 import 'CustomImage.dart';
 // Widget representing a single best seller item
