@@ -15,7 +15,7 @@ class HomeFeatureListView extends StatelessWidget {
         physics:const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: 5,
-        itemBuilder: (context, index) => const HomeFeatureItem(),
+        itemBuilder: (context, index) => const HomeFeatureListViewItem(),
         separatorBuilder: (BuildContext context, int index) => myDivider(width: 20),
       ),
     );

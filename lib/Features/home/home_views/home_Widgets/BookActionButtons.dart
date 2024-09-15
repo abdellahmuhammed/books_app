@@ -10,14 +10,14 @@ class BookActionButtons extends StatelessWidget {
     return  const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        BookIconButton(
+        CustomMaterialButton(
           text: '2587 ',
           textColor: Colors.black,
           backgroundColor: Colors.white,
           topLeft: 8,
           bottomLeft: 8,
         ),
-        BookIconButton(
+        CustomMaterialButton(
           text: 'Free preview',
           backgroundColor: Color(0xffEF8262),
           topRight: 8,
