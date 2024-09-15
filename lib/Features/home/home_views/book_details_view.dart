@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'home_Widgets/BookDetailsViewBody.dart';
 
 class BookDetailsView extends StatelessWidget {
   const BookDetailsView({super.key});
@@ -10,13 +12,4 @@ class BookDetailsView extends StatelessWidget {
     );
   }
 }
-class BookDetailsViewBody extends StatelessWidget {
-  const BookDetailsViewBody({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-
-    );
-  }
-}
