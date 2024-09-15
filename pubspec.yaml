@@ -36,6 +36,7 @@ dependencies:
   flutter_svg:
   flutter:
     sdk: flutter
+  go_router: ^14.2.7
 
 flutter_icons:
   android: true
