@@ -16,7 +16,7 @@ class HomeFeatureListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 5,
         itemBuilder: (context, index) => const HomeFeatureItem(),
-        separatorBuilder: (BuildContext context, int index) => myDivider(),
+        separatorBuilder: (BuildContext context, int index) => myDivider(width: 20),
       ),
     );
   }

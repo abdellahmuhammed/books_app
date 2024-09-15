@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
- myDivider() {
-  return const SizedBox(
-    height: 20, // Adds space between items
+ myDivider( { double? height    , double? width }) {
+  return SizedBox(
+    height: height,
+    width: width,// Adds space between items
   );
 }

@@ -17,7 +17,7 @@ class BestSellerListView extends StatelessWidget {
         // Adds a bouncy scrolling effect
         itemBuilder: (context, index) => const BookListViewItem(),
         // Builds each best seller item
-        separatorBuilder: (BuildContext context, int index) =>  myDivider(),
+        separatorBuilder: (BuildContext context, int index) =>  myDivider(height: 20),
         itemCount: 30, // Number of best seller items
       ),
     );
