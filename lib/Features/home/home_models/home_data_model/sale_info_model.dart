@@ -1,5 +1,6 @@
-import 'price_model.dart';
+
 import 'offer_model.dart';
+import 'price_model.dart';
 
 class SaleInfoModel {
   String country;

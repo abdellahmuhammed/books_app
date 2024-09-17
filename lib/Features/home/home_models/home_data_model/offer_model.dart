@@ -1,4 +1,5 @@
-import 'price_model.dart';
+import 'package:bookly_app/Features/home/home_models/home_data_model/price_model.dart';
+
 
 class OfferModel {
   int finskyOfferType;

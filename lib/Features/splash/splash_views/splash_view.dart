@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import '../../../Core/utils/Book_navigation.dart';
 import '../../../Core/utils/app_router.dart';
-import '../../home/home_views/home_layout_view.dart';
+import '../../home/home_views/home_view.dart';
 import 'splash_widgets/splash_view_body.dart';
 
 // The SplashView widget is responsible for displaying the splash screen
@@ -41,7 +41,7 @@ class _SplashViewState extends State<SplashView> {
   Route buildRouteToHome() {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) =>
-          const HomeLayoutView(),
+          const HomeView(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         const begin =
             Offset(0.0, 1.0); // Animation starts from left (outside screen)

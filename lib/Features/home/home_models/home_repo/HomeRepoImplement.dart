@@ -2,10 +2,10 @@
 import 'dart:developer';
 import 'package:bookly_app/Core/errors/failure.dart';
 import 'package:bookly_app/Core/utils/api_services.dart';
-import 'package:bookly_app/Features/home/home_models/book_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
+import '../home_data_model/book_model.dart';
 import 'HomeRepo.dart';
 
 /// Implementation of the [HomeRepo] interface responsible for fetching book data.

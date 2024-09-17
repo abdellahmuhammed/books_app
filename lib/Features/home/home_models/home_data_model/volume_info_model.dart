@@ -1,6 +1,7 @@
+import 'package:bookly_app/Features/home/home_models/home_data_model/panelization_summary_model.dart';
+import 'package:bookly_app/Features/home/home_models/home_data_model/reading_modes_model.dart';
+
 import 'industry_identifier_model.dart';
-import 'reading_modes_model.dart';
-import 'panelization_summary_model.dart';
 import 'image_links_model.dart';
 
 class VolumeInfoModel {

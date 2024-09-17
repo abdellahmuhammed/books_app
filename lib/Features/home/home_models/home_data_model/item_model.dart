@@ -1,6 +1,6 @@
+import 'access_info_model.dart';
 import 'volume_info_model.dart';
 import 'sale_info_model.dart';
-import 'access_info_model.dart';
 import 'search_info_model.dart';
 
 class ItemModel {

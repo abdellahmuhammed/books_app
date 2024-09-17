@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../../Core/utils/helper.dart';
+import '../../../../Core/utils/common_helpers.dart';
 import 'SimilarBooksItem.dart';
 
 class SimilarBooksListView extends StatelessWidget {
