@@ -19,7 +19,7 @@ class BookDetailsInfoSection extends StatelessWidget {
           height: 25,
         ),
         CustomImage(
-          assetsImage: BooksAssetsHelper.imagesBook,
+          imageUrl: BooksAssetsHelper.imagesBook,
           height: MediaQuery.of(context).size.height * .30,
           aspectRatio: 3 / 4,
         ),

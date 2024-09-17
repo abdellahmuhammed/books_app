@@ -10,7 +10,7 @@ class SimilarBooksItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomImage(assetsImage: BooksAssetsHelper.imagesBook ,)
+    return const CustomImage(imageUrl: BooksAssetsHelper.imagesBook ,)
     ;
   }
 }

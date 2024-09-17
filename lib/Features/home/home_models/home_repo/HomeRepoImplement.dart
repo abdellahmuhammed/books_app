@@ -4,7 +4,6 @@ import 'package:bookly_app/Core/errors/failure.dart';
 import 'package:bookly_app/Core/utils/api_services.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-
 import '../home_data_model/book_model.dart';
 import 'HomeRepo.dart';
 
@@ -17,7 +16,7 @@ class HomeRepoImplement implements HomeRepo {
   HomeRepoImplement(this._apiServices);
 
   // API endpoint for fetching featured books (currently not implemented).
-  final String _endPointFetchFeatureBooks = 'volumes?Filtering=free-ebooks&q=all';
+  final String _endPointFetchFeatureBooks = 'volumes?Filtering=free-ebooks&q=General';
 
   // API endpoint for fetching news books.
   final String _endPointFetchNewsBooks = 'volumes?Filtering=free-ebooks&sorting=newest&q=all' ;

@@ -10,11 +10,8 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: ()async{
-     await   HomeRepoImplement(ApiServices(Dio())).fetchNewsBooks();
-      }),
-      body: HomeViewBody(),
+    return const Scaffold(
+      body:HomeViewBody(),
     );
   }
 }

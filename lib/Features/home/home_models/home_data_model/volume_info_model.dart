@@ -13,7 +13,7 @@ class VolumeInfoModel {
   String description;
   List<IndustryIdentifierModel> industryIdentifiers;
   ReadingModesModel readingModes;
-  int pageCount;
+  int pageCount ;
   String printType;
   List<String> categories;
   double? averageRating;

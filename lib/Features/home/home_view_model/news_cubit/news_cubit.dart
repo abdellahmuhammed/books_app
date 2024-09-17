@@ -6,8 +6,8 @@ import 'package:meta/meta.dart';
 
 part 'news_state.dart';
 
-class NewsCubit extends Cubit<NewsState> {
-  NewsCubit(this.homeRepoImplement) : super(NewsInitialState());
+class NewsBookCubit extends Cubit<NewsState> {
+  NewsBookCubit(this.homeRepoImplement) : super(NewsInitialState());
   final HomeRepoImplement homeRepoImplement;
 
   Future<void> fetchNewsBooks() async {

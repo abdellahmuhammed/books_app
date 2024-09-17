@@ -26,7 +26,7 @@ class ItemModel {
 
   factory ItemModel.fromJson(Map<String, dynamic> json) {
     return ItemModel(
-      kind: json['kind'],
+      kind: json['kind'] ?? 'unknown',
       id: json['id'],
       etag: json['etag'],
       selfLink: json['selfLink'],

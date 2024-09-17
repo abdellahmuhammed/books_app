@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 class CustomImage extends StatelessWidget {
   const CustomImage({
-    super.key, required this.assetsImage, this.aspectRatio = 2.5 / 4, this.height,
+    super.key, required this.imageUrl, this.aspectRatio = 2.5 / 4, this.height,
   });
-  final String assetsImage ;
+  final String imageUrl ;
   final double aspectRatio ;
   final double? height ;
   @override
@@ -20,7 +20,7 @@ class CustomImage extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             // Rounded corners for the book image
             image:  DecorationImage(
-              image: AssetImage(assetsImage),
+              image: NetworkImage(imageUrl),
               // Book cover image
               fit: BoxFit.fill, // Fill the container with the image
             ),
