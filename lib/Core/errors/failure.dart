@@ -1,1 +1,6 @@
-abstract class Failure{}
+abstract class Failure{
+
+
+
+}
+ class ServicesFailure extends Failure{}
