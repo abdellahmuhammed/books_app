@@ -1,4 +1,6 @@
 
+// ignore_for_file: file_names
+
 import 'dart:developer';
 import 'package:bookly_app/Core/errors/failure.dart';
 import 'package:bookly_app/Core/utils/api_services.dart';

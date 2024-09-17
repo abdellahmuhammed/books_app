@@ -36,6 +36,7 @@ dependencies:
   get:
   flutter_svg:
   dartz:
+  equatable:
   flutter:
     sdk: flutter
   go_router: ^14.2.7
