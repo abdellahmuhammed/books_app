@@ -23,7 +23,7 @@ class CustomImage extends StatelessWidget {
         height: height,
         child: AspectRatio(
           aspectRatio: aspectRatio,
-          child: CachedNetworkImage(imageUrl: 'imageUrl' , fit: BoxFit.fill,
+          child: CachedNetworkImage(imageUrl: imageUrl , fit: BoxFit.fill,
           errorWidget: (context, url, error)=> const CustomCircularIndicator() ,
           ),
         ),
