@@ -30,15 +30,15 @@ class HomeViewBody extends StatelessWidget {
             const HomeFeatureListView(),
             // Displays the feature section of the home view
             const SizedBox(
-              height: 49,
+              height: 30,
             ),
             // Adds vertical spacing equal to 4% of the screen height
             Text(
-              'Best Seller ',
+              'News Books',
               style: BooksStyles.textStyle18Bold(context),
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             // Displays the "Best Seller" title using the current theme's headline style
             const BestSellerListView(),
