@@ -6,10 +6,10 @@ class ApiServices {
   final String _baseUrl = 'https://www.googleapis.com/books/v1';
 
   // Instance of Dio, a HTTP client for making requests
-  final Dio dio;
+  final Dio _dio;
 
   // Constructor to initialize Dio instance
-  ApiServices(this.dio);
+  ApiServices(this._dio);
 
   /// This method fetches data from the Google Books API
   ///
@@ -22,7 +22,7 @@ class ApiServices {
 
   Future<Map<String, dynamic>> getData({required String endPoint}) async {
     // Make a GET request to the specified endpoint and await the response
-    var response = await dio.get('$_baseUrl/$endPoint');
+    var response = await _dio.get('$_baseUrl/$endPoint');
 
     // Return the response data as a Map
     return response.data;
