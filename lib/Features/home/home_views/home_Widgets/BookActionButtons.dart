@@ -20,7 +20,8 @@ class BookActionButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         // Button showing the book's availability status as 'Free'.
-        const CustomMaterialButton(
+         CustomMaterialButton(
+          onTap: (){},
           text: 'Free',
           textColor: Colors.black,
           backgroundColor: Colors.white,

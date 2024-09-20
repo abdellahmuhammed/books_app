@@ -78,7 +78,7 @@ class BookListViewItem extends StatelessWidget {
 
                   // Row to display price and rating
                   BookPriceAndRatting(
-                    averageRating: (bookModel.volumeInfo.averageRating )?.toInt() ?? 0,
+                    averageRating: (bookModel.volumeInfo.averageRating )?? 0,
                     countRating: bookModel.volumeInfo.ratingsCount ?? 0,
                   ),
                   // Adds a small gap

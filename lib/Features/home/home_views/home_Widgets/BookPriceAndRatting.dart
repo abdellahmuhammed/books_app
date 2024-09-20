@@ -9,7 +9,7 @@ class BookPriceAndRatting extends StatelessWidget {
   const BookPriceAndRatting({
     super.key, required this.averageRating, required this.countRating,
   });
-  final int averageRating;
+  final num averageRating;
   final int countRating;
   @override
   Widget build(BuildContext context) {

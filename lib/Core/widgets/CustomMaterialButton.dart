@@ -39,7 +39,7 @@ class CustomMaterialButton extends StatelessWidget {
             bottomLeft: Radius.circular(bottomLeft), // Radius for bottom-left corner
             topRight: Radius.circular(topRight), // Radius for top-right corner
             bottomRight: Radius.circular(bottomRight), // Radius for bottom-right corner
-          )),
+          ),),
       onPressed: onTap, // Callback function when button is pressed
       child: Text(
         text, // Displayed text on the button
