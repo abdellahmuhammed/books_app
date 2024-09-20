@@ -1,10 +1,11 @@
-import 'package:bookly_app/Features/home/home_view_model/feature_books/feature_books_cubit.dart';
-import 'package:bookly_app/Features/home/home_view_model/news_cubit/news_cubit.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'Core/theme/book_colors.dart';
 import 'Core/utils/app_router.dart';
 import 'Core/utils/service_locator.dart';
+import 'Features/home/home_view_model/feature_books_cubit/feature_books_cubit.dart';
+import 'Features/home/home_view_model/news_books_cubit/news_cubit.dart';
 import 'myBlocObserver.dart';
 
 void main() {

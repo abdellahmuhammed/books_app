@@ -6,11 +6,11 @@ import '../../../../Core/assets_helper/books_assets_helper.dart';
 import 'CustomImage.dart';
 
 class SimilarBooksItem extends StatelessWidget {
-  const SimilarBooksItem({super.key});
-
+  const SimilarBooksItem({super.key, required this.imageUrl});
+final String imageUrl;
   @override
   Widget build(BuildContext context) {
-    return const CustomImage(imageUrl: BooksAssetsHelper.imagesBook ,)
+    return  CustomImage(imageUrl: imageUrl ,)
     ;
   }
 }

@@ -24,7 +24,7 @@ class CustomImage extends StatelessWidget {
         child: AspectRatio(
           aspectRatio: aspectRatio,
           child: CachedNetworkImage(imageUrl: imageUrl , fit: BoxFit.fill,
-          errorWidget: (context, url, error)=> const CustomCircularIndicator() ,
+          errorWidget: (context, url, error)=> const Icon(Icons.error) ,
           ),
         ),
       ),

@@ -46,7 +46,7 @@ class ServicesFailures extends Failures {
 
    case DioExceptionType.connectionError:
     return ServicesFailures(
-        errorMessage: 'Connection error occurred with API.');
+        errorMessage: 'Connection error occurred with API ,pleas check internet connection.');
 
    case DioExceptionType.unknown:
     return ServicesFailures(

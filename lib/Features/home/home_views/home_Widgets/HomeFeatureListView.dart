@@ -1,12 +1,15 @@
 // ignore_for_file: file_names
 
-import 'package:bookly_app/Core/widgets/custom_error_message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../Core/utils/Book_navigation.dart';
+import '../../../../Core/utils/app_router.dart';
 import '../../../../Core/utils/common_helpers.dart';
 import '../../../../Core/widgets/custom_circular_indicator.dart';
-import '../../home_view_model/feature_books/feature_books_cubit.dart';
-import 'CustomImage.dart';
+import '../../../../Core/widgets/custom_error_message.dart';
+import '../../home_view_model/feature_books_cubit/feature_books_cubit.dart';
+import 'HomeFeatureItem.dart';
 
 class HomeFeatureListView extends StatelessWidget {
   const HomeFeatureListView({super.key});
@@ -24,8 +27,16 @@ class HomeFeatureListView extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemCount: state.books.length,
-              itemBuilder: (context, index) => CustomImage(
-                imageUrl: state.books[index].volumeInfo.imageLinks!.thumbnail
+              itemBuilder: (context, index) => HomeFeatureBookItem(
+                bookImageUrl:
+                    state.books[index].volumeInfo.imageLinks!.thumbnail,
+                onTap: () {
+                  BookNavigation.navigateTo(
+                    context,
+                    location: BookRouter.kBookDetails,
+                    extra: state.books[index],
+                  );
+                },
               ),
               separatorBuilder: (BuildContext context, int index) =>
                   myDivider(width: 20),
@@ -34,7 +45,7 @@ class HomeFeatureListView extends StatelessWidget {
         } else if (state is FeatureBooksFailureState) {
           return CustomErrorMessage(errorMessage: state.errorMessage);
         } else {
-          return const CustomErrorMessage(errorMessage: 'unExpected Error');
+          return const CustomErrorMessage(errorMessage: 'Unexpected Error');
         }
       },
     );

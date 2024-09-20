@@ -1,24 +1,28 @@
 // ignore_for_file: file_names
 
+import 'package:bookly_app/Core/widgets/custom_circular_indicator.dart';
 import 'package:flutter/material.dart';
-import '../../../../Core/assets_helper/books_assets_helper.dart';
 import '../../../../Core/theme/books_theme.dart';
+import '../../home_models/home_data_model/book_model.dart';
 import 'CustomBookDetailsAppBar.dart';
 import 'CustomImage.dart';
 
 class BookDetailsInfoSection extends StatelessWidget {
-  const BookDetailsInfoSection({super.key});
+  const BookDetailsInfoSection({super.key, required this.bookModel});
+
+  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         const CustomBookDetailsAppBar(),
         const SizedBox(
-          height: 25,
+          height: 20,
         ),
         CustomImage(
-          imageUrl: BooksAssetsHelper.imagesBook,
+          imageUrl:
+              '${bookModel.volumeInfo.imageLinks?.thumbnail ?? const CustomCircularIndicator()}',
           height: MediaQuery.of(context).size.height * .30,
           aspectRatio: 3 / 4,
         ),
@@ -30,9 +34,11 @@ class BookDetailsInfoSection extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 70),
             child: Text(
-              'The Jungle Book',
+              bookModel.volumeInfo.title!,
+
               style: BooksStyles.textStyle30Bold(context),
               maxLines: 2,
+              textAlign: TextAlign.center,
             ),
           ),
         ),
@@ -40,16 +46,13 @@ class BookDetailsInfoSection extends StatelessWidget {
           height: 4,
         ),
         Text(
-          'The Jungle Book',
+          bookModel.volumeInfo.authors?[0] ?? 'unknown author',
           style: BooksStyles.textStyle18Medium(context)
               .copyWith(color: Colors.grey),
         ),
         const SizedBox(
-          height: 14,
+          height: 10,
         ),
-        // const BookRating(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        // ),
       ],
     );
   }

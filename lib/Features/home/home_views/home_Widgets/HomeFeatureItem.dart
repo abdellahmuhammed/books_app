@@ -1,18 +1,25 @@
-// ignore_for_file: file_names
 
-// // ignore_for_file: file_names
-//
-// import 'package:flutter/material.dart';
-//
-// import '../../../../Core/assets_helper/books_assets_helper.dart';
-// import 'CustomImage.dart';
-//
-// class HomeFeatureListViewItem extends StatelessWidget {
-//   const HomeFeatureListViewItem({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return const CustomImage(imageUrl: BooksAssetsHelper.imagesBook);
-//   }
-// }
-// // MediaQuery.of(context).size.width*.45,
+import 'package:flutter/material.dart';
+
+import 'CustomImage.dart';
+
+class HomeFeatureBookItem extends StatelessWidget {
+  final String bookImageUrl;
+  final VoidCallback onTap;
+
+  const HomeFeatureBookItem({
+    super.key,
+    required this.bookImageUrl,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: CustomImage(
+        imageUrl: bookImageUrl,
+      ),
+    );
+  }
+}

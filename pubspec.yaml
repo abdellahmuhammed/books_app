@@ -41,6 +41,7 @@ dependencies:
   get:
   get_it:
   go_router: ^14.2.7
+  url_launcher: ^6.3.0
 
 flutter_icons:
   android: true

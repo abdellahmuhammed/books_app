@@ -22,7 +22,9 @@ class BookListViewItem extends StatelessWidget {
         BookNavigation.navigateTo(
           context,
           location: BookRouter.kBookDetails,
+          extra: bookModel
         );
+
       },
       child: SizedBox(
         height: MediaQuery.of(context).size.height *
@@ -76,7 +78,7 @@ class BookListViewItem extends StatelessWidget {
 
                   // Row to display price and rating
                   BookPriceAndRatting(
-                    averageRating: bookModel.volumeInfo.averageRating ?? 0,
+                    averageRating: (bookModel.volumeInfo.averageRating )?.toInt() ?? 0,
                     countRating: bookModel.volumeInfo.ratingsCount ?? 0,
                   ),
                   // Adds a small gap

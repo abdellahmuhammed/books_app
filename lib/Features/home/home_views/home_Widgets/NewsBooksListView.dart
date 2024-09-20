@@ -5,7 +5,7 @@ import 'package:bookly_app/Core/widgets/custom_error_message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../Core/utils/common_helpers.dart';
-import '../../home_view_model/news_cubit/news_cubit.dart';
+import '../../home_view_model/news_books_cubit/news_cubit.dart';
 import 'BookListViewItem.dart';
 // Widget for displaying the list of best-selling items
 
