@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
-import 'BestSellerListView.dart';
+import 'NewsBooksListView.dart';
 import 'CustomHomeViewAppBar.dart'; // Custom AppBar for the home view
 import 'HomeFeatureListView.dart'; // Feature section for the home view
 
@@ -41,7 +41,7 @@ class HomeViewBody extends StatelessWidget {
               height: 10,
             ),
             // Displays the "Best Seller" title using the current theme's headline style
-            const BestSellerListView(),
+            const NewsBooksListView(),
             // Expands the "Best Seller" feature to fill the remaining vertical space
           ],
         ),

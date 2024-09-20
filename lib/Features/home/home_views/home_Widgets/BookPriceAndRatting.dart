@@ -7,20 +7,21 @@ import 'BookRating.dart';
 
 class BookPriceAndRatting extends StatelessWidget {
   const BookPriceAndRatting({
-    super.key,
+    super.key, required this.averageRating, required this.countRating,
   });
-
+  final int averageRating;
+  final int countRating;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(
-          '19.99 €',
+          'Free',
           style: BooksStyles.textStyle20Medium(context),
         ),
 
          const Spacer(), // Fills space between price and rating
-        const BookRating(),
+        BookRating(averageRating: averageRating, countRating: countRating,),
       ],
     );
   }

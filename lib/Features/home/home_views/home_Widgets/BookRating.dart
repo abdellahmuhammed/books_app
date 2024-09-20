@@ -5,19 +5,27 @@ import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key,  this.mainAxisAlignment = MainAxisAlignment. start});
-final MainAxisAlignment mainAxisAlignment;
+  const BookRating(
+      {super.key,
+      this.mainAxisAlignment = MainAxisAlignment.start,
+      required this.averageRating,
+      required this.countRating});
+
+  final MainAxisAlignment mainAxisAlignment;
+  final int averageRating;
+  final int countRating;
+
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: mainAxisAlignment,
       children: [
         Text(
-          '⭐ 2.5 ', // Star rating
+          '⭐ $averageRating', // Star rating
           style: BooksStyles.textStyle16Medium(context),
         ),
         Text(
-          ' (500)', // Number of reviews
+          ' ($countRating)', // Number of reviews
           style: BooksStyles.textStyle14Medium(context).copyWith(
             color: Colors.grey,
           ),

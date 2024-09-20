@@ -16,7 +16,9 @@ class SearchListView extends StatelessWidget {
         child: ListView.separated(
           physics: const BouncingScrollPhysics(),
           // Adds a bouncy scrolling effect
-          itemBuilder: (context, index) => const BookListViewItem(),
+          itemBuilder: (context, index) => Text('data'),
+
+          //const BookListViewItem(),
           // Builds each best seller item
           separatorBuilder: (BuildContext context, int index) => myDivider(height: 20),
           itemCount: 30, // Number of best seller items

@@ -1,5 +1,7 @@
 // ignore_for_file: file_names
 
+import 'package:bookly_app/Core/widgets/custom_circular_indicator.dart';
+import 'package:bookly_app/Features/home/home_models/home_data_model/book_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
 import '../../../../Core/utils/Book_navigation.dart';
@@ -9,23 +11,31 @@ import 'CustomImage.dart';
 // Widget representing a single best seller item
 
 class BookListViewItem extends StatelessWidget {
-  const BookListViewItem({super.key});
+  const BookListViewItem({super.key, required this.bookModel});
+
+  final BookModel bookModel;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        BookNavigation.navigateTo(context, location: BookRouter.kBookDetails ,);
+        BookNavigation.navigateTo(
+          context,
+          location: BookRouter.kBookDetails,
+        );
       },
       child: SizedBox(
-        height: MediaQuery.of(context).size.height*.15, // Dynamic height based on screen size,
+        height: MediaQuery.of(context).size.height *
+            .15, // Dynamic height based on screen size,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           // Aligns items at the top
           children: [
             // Image container for the book cover
-            const CustomImage(
-              imageUrl: 'http://books.google.com/books/content?id=mIxQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71ZfbUgil40NxJYE6pfN0G36G9vxKvbYaybMK5e75LEKkaiq1njLj4ab40n6-WavJvdyys1uXwen9uAidhzUrKfpOTrcsXJTCM3XlX-AYGHn5iRP0OHpaOCbv6Rh_GrUqEiGY_0&source=gbs_api',
+            CustomImage(
+              height: MediaQuery.of(context).size.height * .13,
+              imageUrl:
+                  '${bookModel.volumeInfo.imageLinks?.thumbnail ?? const CustomCircularIndicator()}',
             ),
             // Adds space between the image and the text
             const SizedBox(
@@ -39,7 +49,7 @@ class BookListViewItem extends StatelessWidget {
                 children: [
                   SizedBox(
                     child: Text(
-                      'Harry Potter and the Goblet of Fire',
+                      bookModel.volumeInfo.title.toString(),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: BooksStyles.textStyle20Medium(context),
@@ -50,12 +60,25 @@ class BookListViewItem extends StatelessWidget {
                     width: 2,
                   ), // Adds a small gap
                   Text(
-                    'J.K. Rowling',
+                    'author : ${bookModel.volumeInfo.authors?[0].toString() ?? 'author Unknown'}',
                     style: BooksStyles.textStyle14Medium(context)
                         .copyWith(color: Colors.grey),
                   ),
+                  const SizedBox(
+                    width: 2,
+                  ),
+
+                  Text(
+                    'publisher : ${bookModel.volumeInfo.publisher ?? 'publisher Unknown'}',
+                    style: BooksStyles.textStyle14Medium(context)
+                        .copyWith(color: Colors.grey),
+                  ),
+
                   // Row to display price and rating
-                  const BookPriceAndRatting(),
+                  BookPriceAndRatting(
+                    averageRating: bookModel.volumeInfo.averageRating ?? 0,
+                    countRating: bookModel.volumeInfo.ratingsCount ?? 0,
+                  ),
                   // Adds a small gap
                 ],
               ),
