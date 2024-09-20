@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../Core/utils/common_helpers.dart';
-import '../../../home/home_views/home_Widgets/BookListViewItem.dart';
 
 class SearchListView extends StatelessWidget {
   const SearchListView({super.key});

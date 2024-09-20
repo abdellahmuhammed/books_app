@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import '../../../../Core/assets_helper/books_assets_helper.dart';
 import '../../../../Core/theme/books_theme.dart';
-import 'BookRating.dart';
 import 'CustomBookDetailsAppBar.dart';
 import 'CustomImage.dart';
 
