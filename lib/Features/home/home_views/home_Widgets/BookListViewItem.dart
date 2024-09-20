@@ -18,7 +18,7 @@ class BookListViewItem extends StatelessWidget {
         BookNavigation.navigateTo(context, location: BookRouter.kBookDetails ,);
       },
       child: SizedBox(
-        height: 105, // Dynamic height based on screen size,
+        height: MediaQuery.of(context).size.height*.15, // Dynamic height based on screen size,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           // Aligns items at the top
