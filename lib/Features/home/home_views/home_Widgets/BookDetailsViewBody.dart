@@ -22,7 +22,7 @@ final BookModel bookModel;
             const SizedBox(
               height: 15,
             ),
-           const BookActionButtons(),
+            BookActionButtons(bookModel: bookModel,),
             const SizedBox(
               height: 30,
             ),

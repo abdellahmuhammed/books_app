@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart'; // To handle SVG images
 
 import '../../../../Core/assets_helper/books_assets_helper.dart';
-import '../../../../Core/utils/Book_navigation.dart';
+import '../../../../Core/utils/custom_navigation.dart';
 import '../../../../Core/utils/app_router.dart'; // Import for the assets helper file
 
 // CustomHomeViewAppBar is a custom app bar widget for the home view
@@ -29,7 +29,7 @@ class CustomHomeViewAppBar extends StatelessWidget {
         // Search button with an icon
         IconButton(
           onPressed: () {
-            BookNavigation.navigateTo(context, location:BookRouter.kSearchView );
+           navigateTo(context, location:BookRouter.kSearchView );
 
           },
           icon: const Icon(

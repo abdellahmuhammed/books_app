@@ -3,8 +3,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../Core/widgets/custom_circular_indicator.dart';
-
 class CustomImage extends StatelessWidget {
   const CustomImage({
     super.key,

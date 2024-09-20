@@ -14,7 +14,7 @@ class CustomMaterialButton extends StatelessWidget {
     this.bottomLeft = 0,
     this.topRight = 0,
     this.bottomRight = 0,
-    this.fontSize,
+    this.fontSize, this.onTap,
   });
 
   final Color textColor;
@@ -25,6 +25,7 @@ class CustomMaterialButton extends StatelessWidget {
   final double topRight;
   final double bottomRight;
   final double? fontSize;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class CustomMaterialButton extends StatelessWidget {
             topRight: Radius.circular(topRight),
             bottomRight: Radius.circular(bottomRight),
           )),
-      onPressed: () {},
+      onPressed: onTap,
       child: Text(
         text,
         style:

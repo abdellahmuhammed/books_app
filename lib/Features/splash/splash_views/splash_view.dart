@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import '../../../Core/utils/Book_navigation.dart';
+import '../../../Core/utils/custom_navigation.dart';
 import '../../../Core/utils/app_router.dart';
 import '../../home/home_views/home_view.dart';
 import 'splash_widgets/splash_view_body.dart';
@@ -33,7 +33,7 @@ class _SplashViewState extends State<SplashView> {
   void _buildNavigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
       // Navigate to HomeView and remove all previous routes from the stack
-      BookNavigation.navigateToAndRemoveUntil(context,
+      navigateToAndRemoveUntil(context,
           location: BookRouter.kHomeView, extra: buildRouteToHome());
     });
   }
