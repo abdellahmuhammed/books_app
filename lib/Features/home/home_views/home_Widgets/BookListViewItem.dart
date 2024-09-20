@@ -4,7 +4,7 @@ import 'package:bookly_app/Core/widgets/custom_circular_indicator.dart';
 import 'package:bookly_app/Features/home/home_models/home_data_model/book_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../Core/theme/books_theme.dart';
-import '../../../../Core/utils/custom_navigation.dart';
+import '../../../../Core/utils/function/custom_navigation.dart';
 import '../../../../Core/utils/app_router.dart';
 import 'BookPriceAndRatting.dart';
 import 'CustomImage.dart';

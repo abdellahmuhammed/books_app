@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import '../../../Core/utils/custom_navigation.dart';
+import '../../../Core/utils/function/custom_navigation.dart';
 import '../../../Core/utils/app_router.dart';
 import '../../home/home_views/home_view.dart';
 import 'splash_widgets/splash_view_body.dart';

@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../Core/utils/custom_navigation.dart';
+import '../../../../Core/utils/function/custom_navigation.dart';
 import '../../../../Core/utils/app_router.dart';
 import '../../../../Core/utils/common_helpers.dart';
 import '../../../../Core/widgets/custom_circular_indicator.dart';
